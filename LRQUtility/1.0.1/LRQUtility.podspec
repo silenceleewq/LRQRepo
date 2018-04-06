@@ -10,12 +10,24 @@ Pod::Spec.new do |s|
   s.author           = { '2017' => '958246321@qq.com' }
   s.source           = { :git => 'https://github.com/silenceleewq/LRQUtility.git', :tag => s.version.to_s }
   s.platform         = :ios, '9.0'
-  # s.source_files     = 'LRQUtility/Classes/**/*'
+  s.source_files     = 'LRQUtility/Classes/**/*'
   s.subspec 'Category' do |category|
     category.source_files = 'LRQUtility/Classes/Category/**/*'
   end
 
   s.subspec 'LRQWebImage' do |lrqWebImage|
-    lrqWebImage.source_files = 'LRQUtility/Classes/LRQWebImage/Cache/**/*', 'LRQUtility/Classes/LRQWebImage/Common/**/*', 'LRQUtility/Classes/LRQWebImage/Download/**/*', 'LRQUtility/Classes/LRQWebImage/Protocol/**/*'
+    # s.subspec 'Cache' do |cache|
+    #   cache.source_files = 'LRQUtility/Classes/LRQWebImage/Cache/**/*'
+    # end
+    # s.subspec 'Common' do |common|
+    #   common.source_files = 'LRQUtility/Classes/LRQWebImage/Common/**/*'
+    # end
+    # s.subspec 'Download' do |download|
+    #   download.source_files = 'LRQUtility/Classes/LRQWebImage/Download/**/*'
+    # end
+    # s.subspec 'Protocol' do |protocol|
+    #   protocol.source_files = 'LRQUtility/Classes/LRQWebImage/Protocol/**/*'
+    # end
+    lrqWebImage.source_files = 'LRQUtility/Classes/LRQWebImage/**/*'
   end
 end
