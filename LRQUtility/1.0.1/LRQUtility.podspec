@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { '2017' => '958246321@qq.com' }
   s.source           = { :git => 'https://github.com/silenceleewq/LRQUtility.git', :tag => s.version.to_s }
   s.platform         = :ios, '9.0'
-  s.source_files     = 'LRQUtility/Classes/**/*'
+  # s.source_files     = 'LRQUtility/Classes/**/*'
   s.subspec 'Category' do |category|
     category.source_files = 'LRQUtility/Classes/Category/**/*'
   end
