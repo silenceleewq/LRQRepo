@@ -16,9 +16,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'LRQWebImage' do |lrqWebImage|
-    lrqWebImage.source_files = 'LRQUtility/Classes/LRQWebImage/Cache/**/*'
-    lrqWebImage.source_files = 'LRQUtility/Classes/LRQWebImage/Common/**/*'
-    lrqWebImage.source_files = 'LRQUtility/Classes/LRQWebImage/Download/**/*'
-    lrqWebImage.source_files = 'LRQUtility/Classes/LRQWebImage/Protocol/**/*'
+    lrqWebImage.source_files = 'LRQUtility/Classes/LRQWebImage/Cache/**/*', 'LRQUtility/Classes/LRQWebImage/Common/**/*', 'LRQUtility/Classes/LRQWebImage/Download/**/*', 'LRQUtility/Classes/LRQWebImage/Protocol/**/*'
   end
 end
